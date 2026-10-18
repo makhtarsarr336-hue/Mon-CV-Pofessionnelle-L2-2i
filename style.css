@@ -1,0 +1,342 @@
+/* PARAMÈTRES GÉNÉRAUX */
+
+body {
+    margin: 0;
+    padding: 0;
+
+    background-color: #eeeeeb;
+
+    font-family: Arial, sans-serif;
+
+    color: #292f2c;
+
+    font-size: 13px;
+
+    line-height: 1.6;
+}
+
+
+/* CONTENEUR PRINCIPAL */
+
+.cv-container {
+    max-width: 1100px;
+
+    min-height: 100vh;
+
+    margin: 20px auto;
+
+    background-color: #f8f9f5;
+}
+
+
+/* COLONNE GAUCHE */
+
+.sidebar {
+    background-color: #31564e;
+
+    color: white;
+
+    padding: 35px 25px;
+}
+
+
+/* NOM ET PRÉNOM */
+
+.identite h1 {
+    font-family: Georgia, serif;
+
+    font-size: 36px;
+
+    font-weight: normal;
+
+    line-height: 1.1;
+
+    margin-bottom: 15px;
+}
+
+
+/* INTITULÉ DU POSTE */
+
+.poste {
+    font-size: 10px;
+
+    color: #d2dfd9;
+
+    text-transform: uppercase;
+}
+
+
+/* BLOCS DE LA COLONNE GAUCHE */
+
+.bloc-gauche {
+    margin-top: 30px;
+}
+
+
+/* TITRES DE LA COLONNE GAUCHE */
+
+.bloc-gauche h2 {
+    font-size: 10px;
+
+    font-weight: bold;
+
+    color: #c6d5ce;
+
+    border-bottom: 1px solid #59776f;
+
+    padding-bottom: 8px;
+
+    margin-bottom: 15px;
+
+    letter-spacing: 1px;
+}
+
+
+/* TEXTES DE LA COLONNE GAUCHE */
+
+.bloc-gauche p {
+    font-size: 11px;
+
+    margin-bottom: 14px;
+
+    overflow-wrap: anywhere;
+}
+
+
+/* PETITS LABELS */
+
+.bloc-gauche p span {
+    font-size: 9px;
+
+    color: #b8cbc2;
+
+    text-transform: uppercase;
+}
+
+
+/* COMPÉTENCES */
+
+.competences {
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: flex-start;
+
+    gap: 6px;
+}
+
+
+.competences span {
+    border: 1px solid #59776f;
+
+    padding: 4px 7px;
+
+    font-size: 10px;
+}
+
+
+/* CENTRES D'INTÉRÊT */
+
+.interets {
+    display: flex;
+
+    flex-wrap: wrap;
+
+    gap: 5px;
+}
+
+
+.interets span {
+    border: 1px solid #59776f;
+
+    padding: 4px 7px;
+
+    font-size: 10px;
+}
+
+
+/* COLONNE DROITE */
+
+.contenu {
+    padding: 40px 35px;
+
+    background-color: #f8f9f5;
+}
+
+
+/* BLOCS DE LA COLONNE DROITE */
+
+.bloc-droite {
+    margin-bottom: 35px;
+}
+
+
+/* TITRES DES SECTIONS */
+
+.titre-section {
+    display: flex;
+
+    align-items: center;
+
+    gap: 12px;
+
+    font-family: Georgia, serif;
+
+    font-size: 21px;
+
+    font-weight: normal;
+
+    margin-bottom: 18px;
+}
+
+
+/* LIGNE HORIZONTALE APRÈS LE TITRE */
+
+.titre-section::after {
+    content: "";
+
+    flex: 1;
+
+    height: 1px;
+
+    background-color: #d5dad6;
+}
+
+
+/* SOUS-TITRES */
+
+.bloc-droite h3 {
+    font-size: 12px;
+
+    font-weight: bold;
+
+    margin-bottom: 7px;
+}
+
+
+/* PARAGRAPHES */
+
+.bloc-droite p {
+    font-size: 12px;
+}
+
+
+/* EXPÉRIENCES */
+
+.experience {
+    margin-bottom: 25px;
+}
+
+
+/* TITRE ET DATE SUR LA MÊME LIGNE */
+
+.entete-experience {
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: baseline;
+
+    gap: 10px;
+}
+
+
+/* DATES */
+
+.date {
+    font-size: 9px;
+
+    color: #777f7a;
+
+    white-space: nowrap;
+}
+
+
+/* NOM DE L'ENTREPRISE */
+
+.entreprise {
+    color: #777f7a;
+
+    margin-bottom: 8px;
+}
+
+
+/* LISTES */
+
+.bloc-droite ul {
+    padding-left: 18px;
+}
+
+
+.bloc-droite li {
+    font-size: 12px;
+
+    margin-bottom: 5px;
+}
+
+
+/* FORMATIONS */
+
+.formation {
+    margin-bottom: 25px;
+}
+
+
+/* COMPÉTENCES COMPLÉMENTAIRES */
+
+.sous-titre {
+    font-size: 10px !important;
+
+    font-weight: normal !important;
+
+    color: #777f7a;
+
+    margin-bottom: 10px;
+}
+
+
+/* ADAPTATION AUX TÉLÉPHONES */
+
+@media screen and (max-width: 767px) {
+
+    .cv-container {
+        margin: 0;
+    }
+
+    .sidebar {
+        padding: 30px;
+    }
+
+    .contenu {
+        padding: 30px 25px;
+    }
+
+    .entete-experience {
+        display: block;
+    }
+
+    .date {
+        display: block;
+
+        margin-bottom: 8px;
+    }
+
+}
+
+
+/* IMPRESSION */
+
+@media print {
+
+    body {
+        background-color: white;
+    }
+
+    .cv-container {
+        margin: 0;
+
+        max-width: 100%;
+    }
+
+}
